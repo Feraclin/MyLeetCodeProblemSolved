@@ -9,10 +9,3 @@ func gcd(a int, b int) int {
 	}
 	return gcd(b, a%b)
 }
-
-func main() {
-	println(gcd(384958, 575458))
-	println(gcd(697035, 181412))
-	println(gcd(697035, 575458))
-	println(gcd(384958, 181412))
-}

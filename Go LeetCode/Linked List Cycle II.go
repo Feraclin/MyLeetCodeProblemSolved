@@ -1,12 +1,7 @@
 package main
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
 func detectCycle(head *ListNode) *ListNode {
-	if ok := head.Next; ok {
+	if head.Next == nil {
 		return nil
 	}
 	slow, fast := head, head
