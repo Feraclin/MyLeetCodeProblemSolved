@@ -16,7 +16,7 @@ func checkRes(keys *[]int, dictionary *map[int]int, num int, i int, k int) {
 	})
 }
 
-func maxScore(nums1 []int, nums2 []int, k int) int64 {
+func score(nums1 []int, nums2 []int, k int) int64 {
 	var res int64 = 0
 	var scores []int
 	scoreLst := make(map[int]int, len(nums1))
@@ -39,5 +39,5 @@ func maxScore(nums1 []int, nums2 []int, k int) int64 {
 }
 
 func main() {
-	println(maxScore([]int{1, 3, 3, 2}, []int{2, 1, 3, 4}, 3))
+	println(score([]int{1, 3, 3, 2}, []int{2, 1, 3, 4}, 3))
 }
